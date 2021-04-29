@@ -1,0 +1,916 @@
+<html>
+    <head>
+        <style>
+            #outer{
+                height: 606px;
+                width: 606px;
+                
+                border:1px solid black;
+            }
+            #container1{
+                height: 250px;
+                width: 606px;
+                
+                border:1px solid black;
+            }
+            #container2{
+                height: 100px;
+                width: 606px;
+                
+                border:1px solid black;
+            }
+            #container3{
+                height: 250px;
+                width: 606px;
+            
+                border:1px solid black;
+            }
+            #redbox{
+                height: 250px;
+                width: 250px;
+                background: red;
+                border: 1px solid black;
+                float: left;
+            }
+            #grey1{
+                height: 250px;
+                width: 100px;
+                background:white;
+                border: 1px solid black;
+                float: left;
+            }
+            #greenbox{
+                height: 250px;
+                width: 250px;
+                background: green;
+                border: 1px solid black;
+                float: left;
+            }
+            #grey2{
+                height: 100px;
+                width: 250px;
+                background: white;
+                border: 1px solid black;
+                float: left;
+            }
+            #grey3{
+                height: 0px;
+                width: 0px;
+                background: white;
+                border-top: 50px solid green;
+                border-left: 50px solid red;
+                border-right: 50px solid yellow;
+                border-bottom: 50px solid blue;
+                float: left;
+            }
+            #grey4{
+                height: 100px;
+                width: 250px;
+                background: white;
+                border: 1px solid black;
+                float: left;
+            }
+            #bluebox{
+                height: 250px;
+                width: 250px;
+                background: blue;
+                border: 1px solid black;
+                float: left;
+            }
+            #grey5{
+                height: 250px;
+                width: 100px;
+                background: white;
+                border: 1px solid black;
+                float: left;
+            }
+            #yellowbox{
+                height: 250px;
+                width: 250px;
+                background: yellow;
+                border: 1px solid black;
+                float: left;
+            }
+            
+            #a{
+                height: 180px;
+                width: 180px;
+                border: 1 solid black;
+                background: white;
+                margin-top: 30px;
+            }
+            #b{
+                height: 180px;
+                width: 180px;
+                border: 1 solid black;
+                background: white;
+                margin-top: 30px;
+            }
+            
+            #c{
+                height: 180px;
+                width: 180px;
+                border: 1 solid black;
+                background: white;
+                margin-top: 30px;
+            }
+            
+            #d{
+                height: 180px;
+                width: 180px;
+                border: 1 solid black;
+                background: white;
+                margin-top: 30px;
+            }
+            .a1{
+                height: 33px;
+                width: 180px;
+            }
+            .a2{
+                height: 35px;
+                width: 180px;
+            }
+            .a3{
+                height: 32px;
+                width: 180px;
+            }
+            .a4{
+                height: 35px;
+                width: 180px;
+            }
+            .a5{
+                height: 35px;
+                width: 180px;
+            }
+            .b1{
+                height: 35px;
+                width: 22px;
+                float: left;
+            }
+            .b2{
+                height: 35px;
+                width: 35px;
+                background: red;
+                float: left;
+            }
+            .b3{
+                height: 35px;
+                width: 60px;
+                float: left;
+            }
+            
+            .b5{
+                height: 35px;
+                width: 22px;
+                float: left;
+            }
+            .c1{
+                height: 35px;
+                width: 22px;
+                float: left;
+            }
+            
+            .c3{
+                height: 35px;
+                width: 60px;
+                float: left;
+            }
+    
+            .c5{
+                height: 35px;
+                width: 22px;
+                float: left;
+            }
+           .g1{
+               height: 35px;
+               width: 35px;
+               background: green;
+               float: left;
+           }
+           .blue{
+               height: 35px;
+               width: 35px;
+               background: blue;
+               float: left;
+           }
+           .y1{
+               height: 35px;
+               width: 35px;
+               background: yellow;
+               float: left;
+           }
+           #v11{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v12{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v13{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v14{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v15{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: green;
+           }
+           #v16{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+               background: green;
+           }
+           #v17{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               font-size: 12px;
+           }
+           #v18{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: green;
+           }
+           #v19{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v20{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v21{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: green;
+           }
+           #v22{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v23{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v24{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: green;
+           }
+           #v25{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v26{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v27{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background:green;
+           }
+           #v28{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v29{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v30{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: blue;
+           }
+           #v31{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v32{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v33{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: blue;
+           }
+           #v34{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v35{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v36{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: blue;
+           }
+           #v37{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v38{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v39{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: blue;
+           }
+           #v40{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+               font-size: 12PX;
+           }#v41{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: blue;
+           }
+           #v42{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               background: blue;
+           }
+           #v43{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v44{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+           }
+           #v45{
+               height: 40px;
+               width: 31px;
+               border: 1px solid black;
+               float: left;
+               
+           }
+           #v46{
+               height: 40px;
+               width: 32px;
+               border: 1px solid black;
+               float: left;
+           }
+           #h11{
+               height: 33px;
+               width: 250px;
+               border: 1px solid black;
+           }
+           #h12{
+               height: 32px;
+               width: 250px;
+               border: 1px solid black;
+           }
+           #h13{
+               height: 32px;
+               width: 250px;
+               border: 1px solid black;
+           }
+           #h14{
+               height: 33px;
+               width: 250px;
+               border: 1px solid black;
+           }
+           #h15{
+               height: 32px;
+               width: 250px;
+               border: 1px solid black;
+           }
+           #h16{
+               height: 32px;
+               width: 250px;
+               border: 1px solid black;
+           }
+            #r1{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r2{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: red;
+            }
+            #r3{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r4{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r5{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r6{
+                height: 32px;
+                width: 38px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r7{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r8{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: red;
+            }
+            #r9{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: red;
+            }
+            #r10{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: red;
+            }
+            #r11{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: red;
+            }
+            #r12{
+                height: 32px;
+                width: 38px;
+                border: 1px solid black;
+                float: left;
+                background: red;
+            }
+            #r13{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r14{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r15{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r16{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r17{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r18{
+                height: 32px;
+                width: 38px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r19{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r20{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r21{
+                height: 32px;
+                width: 38px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r22{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r23{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r24{
+                height: 32px;
+                width: 39px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r25{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: yellow;
+            }
+            #r26{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: yellow;
+            }
+            #r27{
+                height: 32px;
+                width: 38px;
+                border: 1px solid black;
+                float: left;
+                background: yellow;
+            }
+            #r28{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: yellow;
+            }
+            #r29{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: yellow;
+            }
+            #r30{
+                height: 32px;
+                width: 39px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r31{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r32{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r33{
+                height: 32px;
+                width: 38px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r34{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+            }
+            #r35{
+                height: 32px;
+                width: 40px;
+                border: 1px solid black;
+                float: left;
+                background: yellow;
+            }
+            #r36{
+                height: 32px;
+                width: 39px;
+                border: 1px solid black;
+                float: left;
+               
+            }
+           
+          
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>LUDO</h1>
+            <div id="outer">
+                <div id="container1">
+                    <div id="redbox">
+                        <div id="a">
+                         <div class="a1"></div>
+                         <div class="a2">
+                             <div class="b1"></div>
+                             <div class="b2"></div>
+                             <div class="b3"></div>
+                             <div class="b2"> </div>
+                             <div class="b5"></div>
+                         </div>
+                         <div class="a3"></div>
+                         <div class="a4">
+                            <div class="c1"></div>
+                            <div class="b2"></div>
+                            <div class="c3"></div>
+                            <div class="b2"></div>
+                            <div class="c5"></div>
+                         </div>
+                         <div class="a5"></div>   
+                        </div>
+                    </div>
+                    <div id="grey1">
+                        <div id="a11">
+                            <div id="v11"></div>
+                            <div id="v12"> &darr;</div>
+                            <div id="v13"></div>
+                        </div>
+                        <div id="a12">
+                            <div id="v14"></div>
+                            <div id="v15"></div>
+                            <div id="v16"></div>
+                        </div>
+                        <div id="a13">
+                            <div id="v17"> STOP</div>
+                            <div id="v18"></div>
+                            <div id="v19"></div>
+                        </div>
+                        <div id="a14">
+                            <div id="v20"></div>
+                            <div id="v21"></div>
+                            <div id="v22"></div>
+                        </div>
+                        
+                        <div id="a15">
+                            <div id="v23"></div>
+                            <div id="v24"></div>
+                            <div id="v25"></div>
+                        </div>
+                        <div id="a16">
+                            <div id="v26"></div>
+                            <div id="v27"></div>
+                            <div id="v28"></div>
+
+                        </div>
+                    </div>
+                    <div id="greenbox">
+                        <div id="b">
+                            <div class="a1"></div>
+                            <div class="a2">
+                                <div class="b1"></div>
+                                <div class="g1"></div>
+                                <div class="b3"></div>
+                                <div class="g1"> </div>
+                                <div class="b5"></div>
+                            </div>
+                            <div class="a3"></div>
+                            <div class="a4">
+                               <div class="c1"></div>
+                               <div class="g1"></div>
+                               <div class="c3"></div>
+                               <div class="g1"></div>
+                               <div class="c5"></div>
+                            </div>
+                            <div class="a5"></div>   
+                        </div>
+                    </div>
+                </div>
+                <div id="container2">
+                    <div id="grey2">
+                        <div id="h11">
+                            <div id="r1"></div>
+                            <div id="r2"></div>
+                            <div id="r3"></div>
+                            <div id="r4"></div>
+                            <div id="r5"></div>
+                            <div id="r6"></div>
+                        </div>
+                        <div id="h12">
+                            <div id="r7">&rarr;</div>
+                            <div id="r8"></div>
+                            <div id="r9"></div>
+                            <div id="r10"></div>
+                            <div id="r11"></div>
+                            <div id="r12"></div>
+                        </div>
+                        <div id="h13">
+                            <div id="r13"></div>
+                            <div id="r14"></div>
+                            <div id="r15"> STOP</div>
+                            <div id="r16"></div>
+                            <div id="r17"></div>
+                            <div id="r18"></div>
+                        </div>
+                    </div>
+                    <div id="grey3"></div>
+                    <div id="grey4">
+                        <div id="h14">
+                            <div id="r19"></div>
+                            <div id="r20"></div>
+                            <div id="r21"></div>
+                            <div id="r22"> STOP</div>
+                            <div id="r23"></div>
+                            <div id="r24"></div>
+                        </div>
+                        <div id="h15">
+                            <div id="r25"></div>
+                            <div id="r26"></div>
+                            <div id="r27"></div>
+                            <div id="r28"></div>
+                            <div id="r29"></div>
+                            <div id="r30">&larr;</div>
+                        </div>
+                            
+                        <div id="h16">
+                            <div id="r31"></div>
+                            <div id="r32"></div>
+                            <div id="r33"></div>
+                            <div id="r34"></div>
+                            <div id="r35"></div>
+                            <div id="r36"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container3">
+                    <div id="bluebox">
+                        <div id="c">
+                            <div class="a1"></div>
+                            <div class="a2">
+                                <div class="b1"></div>
+                                <div class="blue"></div>
+                                <div class="b3"></div>
+                                <div class="blue"> </div>
+                                <div class="b5"></div>
+                            </div>
+                            <div class="a3"></div>
+                            <div class="a4">
+                               <div class="c1"></div>
+                               <div class="blue"></div>
+                               <div class="c3"></div>
+                               <div class="blue"></div>
+                               <div class="c5"></div>
+                            </div>
+                            <div class="a5"></div>   
+                        </div>
+                    </div>
+                    <div id="grey5">
+                        <div id="a17">
+                            <div id="v29"></div>
+                            <div id="v30"></div>
+                            <div id="v31"></div>
+                        </div>
+                        <div id="a18">
+                            <div id="v32"></div>
+                            <div id="v33"></div>
+                            <div id="v34"></div>
+                        </div>
+                        <div id="19">
+                            <div id="v35"></div>
+                            <div id="v36"></div>
+                            <div id="v37"></div>
+                        </div>
+                        <div id="a20">
+                            <div id="v38"></div>
+                            <div id="v39"></div>
+                            <div id="v40">STOP</div>
+                        </div>
+                        <div id="a21">
+                            <div id="v41"></div>
+                            <div id="v42"></div>
+                            <div id="v43"></div>
+                        </div>
+                        <div id="a22">
+                            <div id="v44"></div>
+                            <div id="v45">&uarr;</div>
+                            <div id="v46"></div>
+                        </div>
+                    </div>
+                    <div id="yellowbox">
+                        <div id="d">
+                            <div class="a1"></div>
+                            <div class="a2">
+                                <div class="b1"></div>
+                                <div class="y1"></div>
+                                <div class="b3"></div>
+                                <div class="y1"> </div>
+                                <div class="b5"></div>
+                            </div>
+                            <div class="a3"></div>
+                            <div class="a4">
+                               <div class="c1"></div>
+                               <div class="y1"></div>
+                               <div class="c3"></div>
+                               <div class="y1"></div>
+                               <div class="c5"></div>
+                            </div>
+                            <div class="a5"></div>   
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </center>
+
+        <hr/>
+
+    </body>
+</html>
